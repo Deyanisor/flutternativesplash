@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutternativesplash/screens/login_screen.dart';
 import 'package:flutternativesplash/screens/plato_principal.dart';
-import 'package:flutternativesplash/screens/registration_screen.dart';
+import 'package:flutternativesplash/screens/registration_screens.dart';
 import 'package:flutternativesplash/screens/segundo_splash.dart';
-import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
 
 import 'network/api_service.dart';
 
 void main() {
-  _setuplogging();
+  //_setuplogging();
   runApp(MyApp());
 }
 
-void _setuplogging() {
-  Logger.root.level = Level.ALL;
-  Logger.root.onRecord.listen(
-      (rec) => {print("${rec.level.name}: ${rec.time}:${rec.message}")});
-}
+//void _setuplogging() {
+//Logger.root.level = Level.ALL;
+//Logger.root.onRecord.listen(
+//  (rec) => {print("${rec.level.name}: ${rec.time}:${rec.message}")});
+//}
 
 /// This is the main application widget.
 class MyApp extends StatelessWidget {
